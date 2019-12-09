@@ -1,0 +1,12 @@
+# Output
+*.pdf
+*.png
+
+# Python
+*.pyc
+*.egg-info
+dist/
+__pycache__
+
+# IDE
+.vscode
