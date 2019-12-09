@@ -1,0 +1,7 @@
+name: demo-python-plots-make
+channels:
+  - default
+dependencies:
+  - pandas=0.25
+  - matplotlib=3
+  - seaborn=0.9
