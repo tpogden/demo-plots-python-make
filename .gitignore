@@ -8,5 +8,20 @@
 dist/
 __pycache__
 
+# TeX
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.nav
+*.fls
+*.snm
+*.toc
+
+# Table output
+src/tables/table_*.tex
+reports/figs/table_*.tex
+
+
 # IDE
 .vscode

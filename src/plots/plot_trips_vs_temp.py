@@ -21,14 +21,18 @@ parser.add_argument("--show", default=False, action="store_true",
     help="Show plot in GUI.")
 parser.add_argument("--tex", default=False, action="store_true",
     help="Render with TeX.")
+parser.add_argument("--start", default='2015-01-04', help="Start date.",
+    type=str)
+parser.add_argument("--end", default='2017-01-03', help="End date.",
+    type=str)
 opts, unknown = parser.parse_known_args()
 print('opts:', opts)
 
 # Data ------------------------------------------------------------------------
 
 FPATH = 'data/raw/london_merged.csv'
-START_DATE = '2015-01-04'
-END_DATE = '2017-01-03'
+START_DATE = opts.start
+END_DATE = opts.end
 
 df_raw = pd.read_csv(filepath_or_buffer=FPATH, index_col=0, parse_dates=[0], 
     dtype={'weather_code': np.int, 'is_holiday': np.bool, 'is_weekend': bool, 
@@ -39,8 +43,8 @@ df['dayofweek'] = df.index.dayofweek
 df['hour'] = df.index.hour
 df['dry'] = df['weather_code'].isin([1,2,3,4])
 
-df = df[df['hour'] == 8]
-df = df[df['is_weekend'] == False]
+df = df[df['hour'] == 8] # Only trips between 8AM and 9AM
+df = df[df['is_weekend'] == False] # On weekdays
 df = df[df['is_holiday'] == False]
 df = df[df['dry'] == True]
 
