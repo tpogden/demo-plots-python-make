@@ -1,0 +1,63 @@
+\documentclass{beamer}
+
+\usetheme{metropolis}           % Use metropolis theme
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage{tikz}
+\usepackage{standalone}
+
+\usepackage{siunitx}
+
+\usepackage{booktabs} % for much better looking tables
+
+\title{Demo: Automate your Scientific Plots and Tables with Python and Make}
+% \date{2019-12-02}
+\author{Thomas P. Ogden}
+
+\begin{document}
+
+  \maketitle
+
+%   \section{Blah}
+
+\begin{frame}{Average Trips by Hour on Weekdays}
+    \begin{figure}[p]
+        \includegraphics[width=0.8\textwidth]{figs/plot_daily_journeys.pdf}
+        \caption{Average trips on weekdays by hour of day for dry and wet 
+          weather.}
+    \end{figure}
+  \end{frame}
+
+  \begin{frame}{Average Morning Peak Trips by Season}
+  \begin{table}[h]
+    \centering
+    % This table is auto-generated in src/tables and copied here.
+    \input{figs/table_trips_per_hour.tex}
+    \caption[]{Average trips on weekdays between 08:00-09:00 across seasons for
+    dry and wet weather.}
+    \label{tab:trips_per_hour}
+  \end{table}
+\end{frame}
+
+  \begin{frame}{Average Morning Peak Trips vs Temperature}
+    \begin{figure}[p]
+        \includegraphics[width=0.6\textwidth]{figs/plot_trips_vs_temp.pdf}
+        \caption{Average trips on weekdays between 08:00-09:00 versus the
+          feels-like temperature.}
+    \end{figure}
+  \end{frame}
+
+
+
+  \begin{frame}[standout]
+    \footnotesize
+    repo url
+  \end{frame}    
+
+\end{document}
