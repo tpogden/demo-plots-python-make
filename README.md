@@ -1,7 +1,7 @@
 # Demo: Automate your Scientific Plots with Python and Make
 
-This is a demo project to illustrate the techniques described in my blogpost
-'Automate your Scientific Plots with Python and Make'.
+This is a demo project to go with my blogpost 'Automate your Scientific Plots
+with Python and Make'.
 
 ## Data Source
 

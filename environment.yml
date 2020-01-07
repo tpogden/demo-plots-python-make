@@ -1,4 +1,4 @@
-name: demo-python-plots-make
+name: demo-plots-python-make
 channels:
   - default
 dependencies:
