@@ -1,11 +1,15 @@
-# Demo: Automate your Scientific Plots with Python and Make
+# Demo: Automate Scientific Plots with Python and Make
 
 This is a demo project to go with the blogpost [Automate Scientific Plots
 with Python and Make][bp].
 
 ## Reports
 
-[release links here]
+- [paper.pdf][paper_pdf]
+- [slides.pdf][slides_pdf]
+
+[paper_pdf]: releases/download/v1.0/paper.pdf
+[slides_pdf]: releases/download/v1.0/slides.pdf
 
 ## How to Create the Reports 
 
