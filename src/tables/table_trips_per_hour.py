@@ -1,4 +1,5 @@
-"""TODO
+"""Create table for average trips on weekdays between 08:00-09:00 across 
+seasons for dry and wet weather.
 """
 
 import sys

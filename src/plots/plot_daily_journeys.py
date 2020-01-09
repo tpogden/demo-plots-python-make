@@ -1,4 +1,4 @@
-"""TODO
+"""Plot average trips on weekdays by hour of day for dry and wet weather.
 """
 
 import sys

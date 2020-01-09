@@ -1,4 +1,5 @@
-"""TODO
+"""Plot average trips on weekdays between 08:00-09:00 versus the feels-like
+  temperature.
 """
 
 import sys
