@@ -4,7 +4,7 @@
 # Plots -----------------------------------------------------------------------
 
 PLOTS_DIR = src/plots/
-PLOTS_FLAGS = --tex --start 2015-01-04 --end 2017-01-03
+PLOTS_FLAGS = --start 2015-01-04 --end 2017-01-03 #--tex
 
 PLOTS_PY = $(wildcard $(PLOTS_DIR)plot_*.py)
 PLOTS_PDF = $(PLOTS_PY:.py=.pdf)
@@ -63,15 +63,15 @@ REPORTS_PDF = $(REPORTS_TEX:.tex=.pdf)
 $(REPORTS_DIR)%.pdf: $(REPORTS_DIR)%.tex
 	pushd $(REPORTS_DIR); pdflatex $(<F); popd 
 
-paper_pdf: $(REPORTS_DIR)paper.pdf
-slides_pdf: $(REPORTS_DIR)slides.pdf
+paper: $(REPORTS_DIR)paper.pdf
+slides: $(REPORTS_DIR)slides.pdf
 
-reports_pdf: report_figs $(REPORTS_PDF) 
+reports: report_figs $(REPORTS_PDF) 
 
 # All -------------------------------------------------------------------------
 
 .PHONY : all
-all: reports_pdf 
+all: reports
 
 # Clean -----------------------------------------------------------------------
 
