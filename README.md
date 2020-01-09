@@ -8,8 +8,8 @@ with Python and Make][bp].
 - [paper.pdf][paper_pdf]
 - [slides.pdf][slides_pdf]
 
-[paper_pdf]: releases/download/v1.0/paper.pdf
-[slides_pdf]: releases/download/v1.0/slides.pdf
+[paper_pdf]: https://github.com/tpogden/demo-plots-python-make/releases/download/v1.0/paper.pdf
+[slides_pdf]: https://github.com/tpogden/demo-plots-python-make/releases/download/v1.0/slides.pdf
 
 ## How to Create the Reports 
 
