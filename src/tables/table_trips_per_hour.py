@@ -39,7 +39,7 @@ df['dry'] = df['weather_code'].isin([1,2,3,4])
 df = df[df['hour'] == 8] # Only trips between 8AM and 9AM
 
 dict_season = {0: 'Spring', 1:'Summer', 2:'Autumn', 3:'Winter'}
-dict_weather = {False: 'Dry', True: 'Wet'}
+dict_weather = {False: 'Wet', True: 'Dry'}
 
 df['dry'].replace(dict_weather, inplace=True)
 df['season'].replace(dict_season, inplace=True)
