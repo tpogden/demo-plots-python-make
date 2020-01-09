@@ -33,6 +33,6 @@ For the LaTeX rendering, you will need a working TeX installation with
 
 https://www.kaggle.com/hmavrodiev/london-bike-sharing-dataset/data
 
-Powered by TfL Open Data (see data/raw/LICENSE)
+Powered by TfL Open Data (see [data/raw/LICENSE](data/raw/LICENSE)).
 
 [bp]: https://ogden.eu/automate-scientific-plots-with-python-make
